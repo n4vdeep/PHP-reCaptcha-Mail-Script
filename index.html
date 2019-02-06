@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test site</title>
+
+    <!-- Google reCatpcha API script tag FOR v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+</head>
+
+<body>
+
+
+    <form action="sendmail.php" id="contactForm" method="POST">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" name="vemail" id="email" placeholder="Your email address">
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" class="form-control" id="name" name="vname" placeholder="Your name">
+        </div>
+        <div class="form-group">
+            <label for="services">Equiry:</label>
+            <select class="form-control" id="services" name="vsubject">
+			<option>Accounting</option>
+			<option>Tax</option>
+			<option>More Services</option>
+			<option>New Services</option>
+			<option>Other</option>
+		</select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="vmessage" placeholder="Your message here" rows="16"></textarea>
+        </div>
+        <div class="validation-grid-container">
+            <div class="validation-grid-item1">
+                <div class="g-recaptcha" data-sitekey="your-site-key-here"></div>
+            </div>
+            <div class="validation-grid-item2">
+                <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
