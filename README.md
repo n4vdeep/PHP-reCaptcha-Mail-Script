@@ -8,9 +8,4 @@ Here is a repo of all the files I used to create a form submission in PHP aswell
 
 [A guide that helped me was this](http://acmeextension.com/integrate-google-recaptcha-with-php/)
 
-
-
-
-## [Demo Here]()
-
 Release under MIT
